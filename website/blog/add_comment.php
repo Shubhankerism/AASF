@@ -33,7 +33,7 @@ error_reporting(0);
             "<div style=\"margin-top:4px;\">{$row['comment_text']}</div>" .
             $reply_link . "</li>";
         }
-        echo '<div class="success">Comment successfully posted</div>';
+        echo '<div class="success">Comment successfully</div>';
     } else {
         echo '<div class="error">Error in adding comment</div>';
     }
@@ -42,7 +42,7 @@ error_reporting(0);
     echo '<div class="error">Please enter required fields</div>';
 }
 
-/*function sendmail($to_email,$name,  $subj, $msg){
+function sendmail($to_email,$name,  $subj, $msg){
 
 
 
@@ -52,11 +52,11 @@ error_reporting(0);
 		$mail->Host = 'smtp.gmail.com';		//Sets the SMTP hosts of your Email hosting, this for Godaddy
 		$mail->Port = '465';								//Sets the default SMTP server port
 		$mail->SMTPAuth = true;							//Sets SMTP authentication. Utilizes the Username and Password variables
-		$mail->Username = 'rathoreshivam904@gmail.com';					//Sets SMTP username
-		$mail->Password = 'shivam123!@#';					//Sets SMTP password
+		$mail->Username = 'example@gmail.com';					//Sets SMTP username
+		$mail->Password = 'example';					//Sets SMTP password
 		$mail->SMTPSecure = 'ssl';							//Sets connection prefix. Options are "", "ssl" or "tls"
-		$mail->From = 'rathoreshivam904@gmail.com';			//Sets the From email address for the message
-		$mail->FromName = 'Shivam Rathore';					//Sets the From name of the message
+		$mail->From = 'example@gmail.com';			//Sets the From email address for the message
+		$mail->FromName = 'example';					//Sets the From name of the message
 		$mail->AddAddress($to_email, $name);	//Adds a "To" address
 		$mail->WordWrap = 50;							//Sets word wrapping on the body of the message to a given number of characters
 								//Sets message type to HTML
@@ -95,5 +95,5 @@ error_reporting(0);
 	}
 
 
-}*/
+}
 ?>
